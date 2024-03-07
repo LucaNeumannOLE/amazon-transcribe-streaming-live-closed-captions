@@ -38,7 +38,7 @@ const srt = require('./srt');
 const argv = require('./argv');
 
 /* Constants */
-const REGION = 'us-west-2';
+const REGION = 'eu-central-1';
 const isFifo = argv('fifo');
 const customVocab = argv('cv');
 const clm = argv('clm');
@@ -455,7 +455,7 @@ const startTranscribe = async function startTranscribe() {
   console.log('starting transcribe');
   const tsClient = new TranscribeStreamingClient({ region: REGION });
   const tsParams = {
-    LanguageCode: 'en-US',
+    LanguageCode: 'de-DE',
     MediaEncoding: 'pcm',
     MediaSampleRateHertz: sampleRate,
     AudioStream: audioStream(),
