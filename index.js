@@ -459,7 +459,7 @@ const startTranscribe = async function startTranscribe() {
     MediaEncoding: 'pcm',
     MediaSampleRateHertz: sampleRate,
     AudioStream: audioStream(),
-    EnablePartialResultsStabilization,
+    EnablePartialResultsStabilization: 'true',
     PartialResultsStability: 'medium',
   };
   if (customVocab) {
