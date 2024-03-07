@@ -9,7 +9,7 @@ Parameters:
   LatestImageId:
     Description: Ubuntu Linux Image Id. Leave blank for default, which is ami-0557a15b87f6559cf
     Type: AWS::EC2::Image::Id
-    Default: ami-0557a15b87f6559cf
+    Default: ami-04dfd853d88e818e8
   EC2KeyPairName:
     Description: Name of existing EC2 Keypair. If you leave this blank, you will only have SSH access via the console.
     Type: String
