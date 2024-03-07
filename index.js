@@ -459,6 +459,8 @@ const startTranscribe = async function startTranscribe() {
     MediaEncoding: 'pcm',
     MediaSampleRateHertz: sampleRate,
     AudioStream: audioStream(),
+    EnablePartialResultsStabilization,
+    PartialResultsStability: 'medium',
   };
   if (customVocab) {
     tsParams.VocabularyName = customVocab;
